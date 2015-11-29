@@ -1,0 +1,14 @@
+{
+  "order_id": 104,
+  "total_price": 13.45,
+  "product" : {
+    "id": "123",
+    "name": "Product name",
+    "price": 12.95,
+	"person" : {
+    	"id": "333",
+  	  "name": "ming",
+ 	   "age": "18"
+ 	 }
+  }
+}
