@@ -90,17 +90,17 @@ kPropertyLog(dict1)
 @interface JDYRootModel : NSObject
 @property (nonatomic,copy)NSString *status
 @property (nonatomic,strong)JDYDescriptioninfoModel *descriptionInfo
-@property (nonatomic,assign)NSNumber *organizationId
+@property (nonatomic,strong)NSNumber *organizationId
 @property (nonatomic,strong)JDYOverviewinfoModel *overviewInfo
-@property (nonatomic,assign)NSNumber *success
-@property (nonatomic,assign)NSNumber *collected
+@property (nonatomic,strong)NSNumber *success
+@property (nonatomic,strong)NSNumber *collected
 @property (nonatomic,strong)JDYCoursecontentlistModel *courseContentList
-@property (nonatomic,assign)NSNumber *totalTimesLeft
+@property (nonatomic,strong)NSNumber *totalTimesLeft
 @end
 
 @interface JDYDescriptioninfoModel : NSObject
 @property (nonatomic,copy)NSString *FTopicTitle
-@property (nonatomic,assign)NSNumber *id
+@property (nonatomic,strong)NSNumber *id
 @property (nonatomic,copy)NSString *tags
 @property (nonatomic,copy)NSString *STopicTitle
 @property (nonatomic,copy)NSString *description
@@ -108,26 +108,26 @@ kPropertyLog(dict1)
 @end
 
 @interface JDYOverviewinfoModel : NSObject
-@property (nonatomic,assign)NSNumber *isFree
-@property (nonatomic,assign)NSNumber *canRead
-@property (nonatomic,assign)NSNumber *downloadEnabled
+@property (nonatomic,strong)NSNumber *isFree
+@property (nonatomic,strong)NSNumber *canRead
+@property (nonatomic,strong)NSNumber *downloadEnabled
 @property (nonatomic,copy)NSString *owner
-@property (nonatomic,assign)NSNumber *totalLength
+@property (nonatomic,strong)NSNumber *totalLength
 @property (nonatomic,copy)NSString *threewinType
-@property (nonatomic,assign)NSNumber *studyTimes
+@property (nonatomic,strong)NSNumber *studyTimes
 @property (nonatomic,copy)NSString *noSaleHint
-@property (nonatomic,assign)NSNumber *isSaleOnline
+@property (nonatomic,strong)NSNumber *isSaleOnline
 @property (nonatomic,copy)NSString *coursePhotoUrl
-@property (nonatomic,assign)NSNumber *id
-@property (nonatomic,assign)NSNumber *commentCnt
+@property (nonatomic,strong)NSNumber *id
+@property (nonatomic,strong)NSNumber *commentCnt
 @property (nonatomic,copy)NSString *largeCoursePhoto
-@property (nonatomic,assign)NSNumber *isPurchased
+@property (nonatomic,strong)NSNumber *isPurchased
 @property (nonatomic,copy)NSString *courseType
-@property (nonatomic,assign)NSNumber *createTime
-@property (nonatomic,assign)NSNumber *price
+@property (nonatomic,strong)NSNumber *createTime
+@property (nonatomic,strong)NSNumber *price
 @property (nonatomic,copy)NSString *courseTitle
 @property (nonatomic,copy)NSString *photoUrl
-@property (nonatomic,assign)NSNumber *isExternalLink
+@property (nonatomic,strong)NSNumber *isExternalLink
 @end
 
 @interface JDYCoursecontentlistModel : NSObject
@@ -135,36 +135,36 @@ kPropertyLog(dict1)
 @end
 
 @interface JDYListModel : NSObject
-@property (nonatomic,assign)NSNumber *rank
+@property (nonatomic,strong)NSNumber *rank
 @property (nonatomic,copy)NSString *paperName
 @property (nonatomic,copy)NSString *slaveContentId
 @property (nonatomic,copy)NSString *convertStatus
 @property (nonatomic,copy)NSString *otherContentId
-@property (nonatomic,assign)NSNumber *chapterType
+@property (nonatomic,strong)NSNumber *chapterType
 @property (nonatomic,copy)NSString *threewinType
 @property (nonatomic,copy)NSString *paperId
-@property (nonatomic,assign)NSNumber *canSkipTest
+@property (nonatomic,strong)NSNumber *canSkipTest
 @property (nonatomic,copy)NSString *paperHasQuestion
 @property (nonatomic,copy)NSString *children
 @property (nonatomic,copy)NSString *largeCourseContentPhoto
-@property (nonatomic,assign)NSNumber *lesson
+@property (nonatomic,strong)NSNumber *lesson
 @property (nonatomic,copy)NSString *subjectTitle
 @property (nonatomic,copy)NSString *slaveContentLength
-@property (nonatomic,assign)NSNumber *id
+@property (nonatomic,strong)NSNumber *id
 @property (nonatomic,copy)NSString *length
-@property (nonatomic,assign)NSNumber *level
-@property (nonatomic,assign)NSNumber *lessonType
-@property (nonatomic,assign)NSNumber *threewinMatser
+@property (nonatomic,strong)NSNumber *level
+@property (nonatomic,strong)NSNumber *lessonType
+@property (nonatomic,strong)NSNumber *threewinMatser
 @property (nonatomic,copy)NSString *contentType
 @property (nonatomic,copy)NSString *parentId
 @property (nonatomic,copy)NSString *seqTitle
 @property (nonatomic,copy)NSString *contentTitle
-@property (nonatomic,assign)NSNumber *hasTestAfterCourse
-@property (nonatomic,assign)NSNumber *studyProgress
-@property (nonatomic,assign)NSNumber *convertable
+@property (nonatomic,strong)NSNumber *hasTestAfterCourse
+@property (nonatomic,strong)NSNumber *studyProgress
+@property (nonatomic,strong)NSNumber *convertable
 @property (nonatomic,copy)NSString *timesLeft
-@property (nonatomic,assign)NSNumber *section
-@property (nonatomic,assign)NSNumber *chapter
+@property (nonatomic,strong)NSNumber *section
+@property (nonatomic,strong)NSNumber *chapter
 @end
 ```
  

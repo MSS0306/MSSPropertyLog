@@ -81,7 +81,7 @@
         else if([obj isKindOfClass:[NSNumber class]])
         {
             type = @"NSNumber";
-            propertyType = @"assign";
+            propertyType = @"strong";
         }
         else if([obj isKindOfClass:[NSArray class]] || [obj isKindOfClass:[NSDictionary class]])
         {
