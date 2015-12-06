@@ -87,84 +87,88 @@ kPropertyLog(dict1)
 
 打印结果:
 ```Objective-c
+@class JDYDescriptioninfoModel;
+@class JDYOverviewinfoModel;
+@class JDYCoursecontentlistModel;
+
 @interface JDYRootModel : NSObject
-@property (nonatomic,copy)NSString *status
-@property (nonatomic,strong)JDYDescriptioninfoModel *descriptionInfo
-@property (nonatomic,strong)NSNumber *organizationId
-@property (nonatomic,strong)JDYOverviewinfoModel *overviewInfo
-@property (nonatomic,strong)NSNumber *success
-@property (nonatomic,strong)NSNumber *collected
-@property (nonatomic,strong)JDYCoursecontentlistModel *courseContentList
-@property (nonatomic,strong)NSNumber *totalTimesLeft
+@property (nonatomic,copy)NSString *status;
+@property (nonatomic,strong)JDYDescriptioninfoModel *descriptionInfo;
+@property (nonatomic,strong)NSNumber *organizationId;
+@property (nonatomic,strong)JDYOverviewinfoModel *overviewInfo;
+@property (nonatomic,strong)NSNumber *success;
+@property (nonatomic,strong)NSNumber *collected;
+@property (nonatomic,strong)JDYCoursecontentlistModel *courseContentList;
+@property (nonatomic,strong)NSNumber *totalTimesLeft;
 @end
 
 @interface JDYDescriptioninfoModel : NSObject
-@property (nonatomic,copy)NSString *FTopicTitle
-@property (nonatomic,strong)NSNumber *id
-@property (nonatomic,copy)NSString *tags
-@property (nonatomic,copy)NSString *STopicTitle
-@property (nonatomic,copy)NSString *description
-@property (nonatomic,copy)NSString *TTopicTitle
+@property (nonatomic,copy)NSString *FTopicTitle;
+@property (nonatomic,strong)NSNumber *id;
+@property (nonatomic,copy)NSString *tags;
+@property (nonatomic,copy)NSString *STopicTitle;
+@property (nonatomic,copy)NSString *description;
+@property (nonatomic,copy)NSString *TTopicTitle;
 @end
 
 @interface JDYOverviewinfoModel : NSObject
-@property (nonatomic,strong)NSNumber *isFree
-@property (nonatomic,strong)NSNumber *canRead
-@property (nonatomic,strong)NSNumber *downloadEnabled
-@property (nonatomic,copy)NSString *owner
-@property (nonatomic,strong)NSNumber *totalLength
-@property (nonatomic,copy)NSString *threewinType
-@property (nonatomic,strong)NSNumber *studyTimes
-@property (nonatomic,copy)NSString *noSaleHint
-@property (nonatomic,strong)NSNumber *isSaleOnline
-@property (nonatomic,copy)NSString *coursePhotoUrl
-@property (nonatomic,strong)NSNumber *id
-@property (nonatomic,strong)NSNumber *commentCnt
-@property (nonatomic,copy)NSString *largeCoursePhoto
-@property (nonatomic,strong)NSNumber *isPurchased
-@property (nonatomic,copy)NSString *courseType
-@property (nonatomic,strong)NSNumber *createTime
-@property (nonatomic,strong)NSNumber *price
-@property (nonatomic,copy)NSString *courseTitle
-@property (nonatomic,copy)NSString *photoUrl
-@property (nonatomic,strong)NSNumber *isExternalLink
+@property (nonatomic,strong)NSNumber *isFree;
+@property (nonatomic,strong)NSNumber *canRead;
+@property (nonatomic,strong)NSNumber *downloadEnabled;
+@property (nonatomic,copy)NSString *owner;
+@property (nonatomic,strong)NSNumber *totalLength;
+@property (nonatomic,copy)NSString *threewinType;
+@property (nonatomic,strong)NSNumber *studyTimes;
+@property (nonatomic,copy)NSString *noSaleHint;
+@property (nonatomic,strong)NSNumber *isSaleOnline;
+@property (nonatomic,copy)NSString *coursePhotoUrl;
+@property (nonatomic,strong)NSNumber *id;
+@property (nonatomic,strong)NSNumber *commentCnt;
+@property (nonatomic,copy)NSString *largeCoursePhoto;
+@property (nonatomic,strong)NSNumber *isPurchased;
+@property (nonatomic,copy)NSString *courseType;
+@property (nonatomic,strong)NSNumber *createTime;
+@property (nonatomic,strong)NSNumber *price;
+@property (nonatomic,copy)NSString *courseTitle;
+@property (nonatomic,copy)NSString *photoUrl;
+@property (nonatomic,strong)NSNumber *isExternalLink;
 @end
 
 @interface JDYCoursecontentlistModel : NSObject
-@property (nonatomic,strong)NSArray *list
+@property (nonatomic,strong)NSArray *list;
 @end
 
 @interface JDYListModel : NSObject
-@property (nonatomic,strong)NSNumber *rank
-@property (nonatomic,copy)NSString *paperName
-@property (nonatomic,copy)NSString *slaveContentId
-@property (nonatomic,copy)NSString *convertStatus
-@property (nonatomic,copy)NSString *otherContentId
-@property (nonatomic,strong)NSNumber *chapterType
-@property (nonatomic,copy)NSString *threewinType
-@property (nonatomic,copy)NSString *paperId
-@property (nonatomic,strong)NSNumber *canSkipTest
-@property (nonatomic,copy)NSString *paperHasQuestion
-@property (nonatomic,copy)NSString *children
-@property (nonatomic,copy)NSString *largeCourseContentPhoto
-@property (nonatomic,strong)NSNumber *lesson
-@property (nonatomic,copy)NSString *subjectTitle
-@property (nonatomic,copy)NSString *slaveContentLength
-@property (nonatomic,strong)NSNumber *id
-@property (nonatomic,copy)NSString *length
-@property (nonatomic,strong)NSNumber *level
-@property (nonatomic,strong)NSNumber *lessonType
-@property (nonatomic,strong)NSNumber *threewinMatser
-@property (nonatomic,copy)NSString *contentType
-@property (nonatomic,copy)NSString *parentId
-@property (nonatomic,copy)NSString *seqTitle
-@property (nonatomic,copy)NSString *contentTitle
-@property (nonatomic,strong)NSNumber *hasTestAfterCourse
-@property (nonatomic,strong)NSNumber *studyProgress
-@property (nonatomic,strong)NSNumber *convertable
-@property (nonatomic,copy)NSString *timesLeft
-@property (nonatomic,strong)NSNumber *section
-@property (nonatomic,strong)NSNumber *chapter
+@property (nonatomic,strong)NSNumber *rank;
+@property (nonatomic,copy)NSString *paperName;
+@property (nonatomic,copy)NSString *slaveContentId;
+@property (nonatomic,copy)NSString *convertStatus;
+@property (nonatomic,copy)NSString *otherContentId;
+@property (nonatomic,strong)NSNumber *chapterType;
+@property (nonatomic,copy)NSString *threewinType;
+@property (nonatomic,copy)NSString *paperId;
+@property (nonatomic,strong)NSNumber *canSkipTest;
+@property (nonatomic,copy)NSString *paperHasQuestion;
+@property (nonatomic,copy)NSString *children;
+@property (nonatomic,copy)NSString *largeCourseContentPhoto;
+@property (nonatomic,strong)NSNumber *lesson;
+@property (nonatomic,copy)NSString *subjectTitle;
+@property (nonatomic,copy)NSString *slaveContentLength;
+@property (nonatomic,strong)NSNumber *id;
+@property (nonatomic,copy)NSString *length;
+@property (nonatomic,strong)NSNumber *level;
+@property (nonatomic,strong)NSNumber *lessonType;
+@property (nonatomic,strong)NSNumber *threewinMatser;
+@property (nonatomic,copy)NSString *contentType;
+@property (nonatomic,copy)NSString *parentId;
+@property (nonatomic,copy)NSString *seqTitle;
+@property (nonatomic,copy)NSString *contentTitle;
+@property (nonatomic,strong)NSNumber *hasTestAfterCourse;
+@property (nonatomic,strong)NSNumber *studyProgress;
+@property (nonatomic,strong)NSNumber *convertable;
+@property (nonatomic,copy)NSString *timesLeft;
+@property (nonatomic,strong)NSNumber *section;
+@property (nonatomic,strong)NSNumber *chapter;
 @end
 ```
  

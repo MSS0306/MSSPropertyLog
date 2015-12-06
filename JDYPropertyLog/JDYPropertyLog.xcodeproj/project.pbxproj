@@ -13,12 +13,12 @@
 		40D0119A1BEC81EC00F59847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D011981BEC81EC00F59847 /* Main.storyboard */; };
 		40D0119C1BEC81EC00F59847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D0119B1BEC81EC00F59847 /* Assets.xcassets */; };
 		40D0119F1BEC81EC00F59847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D0119D1BEC81EC00F59847 /* LaunchScreen.storyboard */; };
-		40D011A81BEC820700F59847 /* JDYPropertyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D011A71BEC820700F59847 /* JDYPropertyLog.m */; settings = {ASSET_TAGS = (); }; };
-		40D011AD1BEC82F800F59847 /* test01.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011A91BEC82F800F59847 /* test01.json */; settings = {ASSET_TAGS = (); }; };
-		40D011AE1BEC82F800F59847 /* test02.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011AA1BEC82F800F59847 /* test02.json */; settings = {ASSET_TAGS = (); }; };
-		40D011AF1BEC82F800F59847 /* test03.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011AB1BEC82F800F59847 /* test03.json */; settings = {ASSET_TAGS = (); }; };
-		40D011B01BEC82F800F59847 /* test04.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011AC1BEC82F800F59847 /* test04.json */; settings = {ASSET_TAGS = (); }; };
-		40D011B21BECB1DD00F59847 /* test00.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011B11BECB1DD00F59847 /* test00.json */; settings = {ASSET_TAGS = (); }; };
+		40D011A81BEC820700F59847 /* JDYPropertyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D011A71BEC820700F59847 /* JDYPropertyLog.m */; };
+		40D011AD1BEC82F800F59847 /* test01.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011A91BEC82F800F59847 /* test01.json */; };
+		40D011AE1BEC82F800F59847 /* test02.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011AA1BEC82F800F59847 /* test02.json */; };
+		40D011AF1BEC82F800F59847 /* test03.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011AB1BEC82F800F59847 /* test03.json */; };
+		40D011B01BEC82F800F59847 /* test04.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011AC1BEC82F800F59847 /* test04.json */; };
+		40D011B21BECB1DD00F59847 /* test00.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D011B11BECB1DD00F59847 /* test00.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

@@ -20,6 +20,7 @@
 @end
 
 @interface JDYPropertyLog ()
+@property (nonatomic,copy)NSMutableString *classString;
 @property (nonatomic,copy)NSMutableString *resultString;
 @end
 
@@ -30,8 +31,9 @@
     self = [super init];
     if(self)
     {
+        _classString = [[NSMutableString alloc]init];
+        [_classString appendString:@"\n\n"];
         _resultString = [[NSMutableString alloc]init];
-        [_resultString appendString:@"\n"];
     }
     return self;
 }
@@ -93,6 +95,7 @@
             {
                 type = [NSString stringWithFormat:@"%@",[self getModelNameWithKey:key]];
                 [dictArray addObject:propertyLogModel];
+                [_classString appendFormat:@"@class %@;\n",type];
             }
             else if([obj isKindOfClass:[NSArray class]])
             {
@@ -100,7 +103,7 @@
                 [array addObject:propertyLogModel];
             }
         }
-        [_resultString appendFormat:@"@property (nonatomic,%@)%@ *%@\n",propertyType,type,key];
+        [_resultString appendFormat:@"@property (nonatomic,%@)%@ *%@;\n",propertyType,type,key];
     }];
     [_resultString appendString:@"@end\n"];
     for (JDYPropertyLogModel *propertyLogModel in dictArray)
@@ -120,7 +123,7 @@
 
 - (void)logResultString
 {
-    NSLog(@"%@",_resultString);
+    NSLog(@"%@%@",_classString,_resultString);
 }
 
 
