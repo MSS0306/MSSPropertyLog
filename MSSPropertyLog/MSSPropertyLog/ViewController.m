@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "JDYPropertyLog.h"
+#import "MSSPropertyLog.h"
 
 @interface ViewController ()
 

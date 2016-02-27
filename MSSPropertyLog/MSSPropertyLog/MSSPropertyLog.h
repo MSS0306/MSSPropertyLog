@@ -1,6 +1,6 @@
 //
-//  JDYPropertyLog.h
-//  JDYPropertyLog
+//  MSSPropertyLog.h
+//  MSSPropertyLog
 //
 //  Created by 于威 on 15/11/6.
 //  Copyright © 2015年 于威. All rights reserved.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 #define kPropertyLog(varName) \
-JDYPropertyLog *tempPropertyLog = [[JDYPropertyLog alloc]init]; \
+MSSPropertyLog *tempPropertyLog = [[MSSPropertyLog alloc]init]; \
 [tempPropertyLog logPropertyWithObj:varName]; \
 [tempPropertyLog logResultString];
 
-@interface JDYPropertyLog : NSObject
+@interface MSSPropertyLog : NSObject
 
 - (void)logPropertyWithObj:(id)obj;
 - (void)logResultString;

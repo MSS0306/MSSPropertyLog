@@ -1,4 +1,4 @@
-# JDYPropertyLog
+# MSSPropertyLog
 property生成,打印结果
 注:赞不支持一个数组内存放不同的对象
 # Example
@@ -87,22 +87,22 @@ kPropertyLog(dict1)
 
 打印结果:
 ```Objective-c
-@class JDYDescriptioninfoModel;
-@class JDYOverviewinfoModel;
-@class JDYCoursecontentlistModel;
+@class MSSDescriptioninfoModel;
+@class MSSOverviewinfoModel;
+@class MSSCoursecontentlistModel;
 
-@interface JDYRootModel : NSObject
+@interface MSSRootModel : NSObject
 @property (nonatomic,copy)NSString *status;
-@property (nonatomic,strong)JDYDescriptioninfoModel *descriptionInfo;
+@property (nonatomic,strong)MSSDescriptioninfoModel *descriptionInfo;
 @property (nonatomic,strong)NSNumber *organizationId;
-@property (nonatomic,strong)JDYOverviewinfoModel *overviewInfo;
+@property (nonatomic,strong)MSSOverviewinfoModel *overviewInfo;
 @property (nonatomic,strong)NSNumber *success;
 @property (nonatomic,strong)NSNumber *collected;
-@property (nonatomic,strong)JDYCoursecontentlistModel *courseContentList;
+@property (nonatomic,strong)MSSCoursecontentlistModel *courseContentList;
 @property (nonatomic,strong)NSNumber *totalTimesLeft;
 @end
 
-@interface JDYDescriptioninfoModel : NSObject
+@interface MSSDescriptioninfoModel : NSObject
 @property (nonatomic,copy)NSString *FTopicTitle;
 @property (nonatomic,strong)NSNumber *id;
 @property (nonatomic,copy)NSString *tags;
@@ -111,7 +111,7 @@ kPropertyLog(dict1)
 @property (nonatomic,copy)NSString *TTopicTitle;
 @end
 
-@interface JDYOverviewinfoModel : NSObject
+@interface MSSOverviewinfoModel : NSObject
 @property (nonatomic,strong)NSNumber *isFree;
 @property (nonatomic,strong)NSNumber *canRead;
 @property (nonatomic,strong)NSNumber *downloadEnabled;
@@ -134,11 +134,11 @@ kPropertyLog(dict1)
 @property (nonatomic,strong)NSNumber *isExternalLink;
 @end
 
-@interface JDYCoursecontentlistModel : NSObject
+@interface MSSCoursecontentlistModel : NSObject
 @property (nonatomic,strong)NSArray *list;
 @end
 
-@interface JDYListModel : NSObject
+@interface MSSListModel : NSObject
 @property (nonatomic,strong)NSNumber *rank;
 @property (nonatomic,copy)NSString *paperName;
 @property (nonatomic,copy)NSString *slaveContentId;

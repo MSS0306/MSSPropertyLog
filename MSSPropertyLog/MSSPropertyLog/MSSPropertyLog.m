@@ -1,30 +1,30 @@
 //
-//  JDYPropertyLog.m
-//  JDYPropertyLog
+//  MSSPropertyLog.m
+//  MSSPropertyLog
 //
 //  Created by 于威 on 15/11/6.
 //  Copyright © 2015年 于威. All rights reserved.
 //
 
-#import "JDYPropertyLog.h"
+#import "MSSPropertyLog.h"
 
-#define kClassTitle @"JDY"
+#define kClassTitle @"MSS"
 
-@interface JDYPropertyLogModel : NSObject
+@interface MSSPropertyLogModel : NSObject
 @property (nonatomic,copy)NSString *key;
 @property (nonatomic,assign)id obj;
 @end
 
-@implementation JDYPropertyLogModel
+@implementation MSSPropertyLogModel
 
 @end
 
-@interface JDYPropertyLog ()
+@interface MSSPropertyLog ()
 @property (nonatomic,copy)NSMutableString *classString;
 @property (nonatomic,copy)NSMutableString *resultString;
 @end
 
-@implementation JDYPropertyLog
+@implementation MSSPropertyLog
 
 - (instancetype)init
 {
@@ -87,7 +87,7 @@
         }
         else if([obj isKindOfClass:[NSArray class]] || [obj isKindOfClass:[NSDictionary class]])
         {
-            JDYPropertyLogModel *propertyLogModel = [[JDYPropertyLogModel alloc]init];
+            MSSPropertyLogModel *propertyLogModel = [[MSSPropertyLogModel alloc]init];
             propertyLogModel.key = key;
             propertyLogModel.obj = obj;
             propertyType = @"strong";
@@ -106,11 +106,11 @@
         [_resultString appendFormat:@"@property (nonatomic,%@)%@ *%@;\n",propertyType,type,key];
     }];
     [_resultString appendString:@"@end\n"];
-    for (JDYPropertyLogModel *propertyLogModel in dictArray)
+    for (MSSPropertyLogModel *propertyLogModel in dictArray)
     {
         [self logPropertyWithDict:propertyLogModel.obj className:[self getModelNameWithKey:propertyLogModel.key]];
     }
-    for (JDYPropertyLogModel *propertyLogModel in array)
+    for (MSSPropertyLogModel *propertyLogModel in array)
     {
         [self logPropertyWithArray:propertyLogModel.obj className:[self getModelNameWithKey:propertyLogModel.key]];
     }
